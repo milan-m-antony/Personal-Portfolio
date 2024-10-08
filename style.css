@@ -1,0 +1,464 @@
+/* Styles for larger screens */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Styles for medium-sized screens */
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* Styles for smaller screens */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+
+header {
+    padding: 10px;
+    background-color: rgb(22, 160, 209);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+  border-radius: 15px;
+margin-top: 5px;
+margin-left: 5px;
+
+}
+
+
+nav {
+  margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 4px;
+    
+}
+
+.logo img {
+  border-radius: 50px;
+  margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.logo span {
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 70px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: larger;
+}
+
+.menu li a:hover {
+    text-decoration:none;
+    border-radius: 90px;
+    padding: 5px;
+    color:black;
+   background-color: #c1fa15;
+    
+}
+
+
+
+/* about me */
+
+
+#about-me {
+    margin-top: 2rem;
+    background-color: #f7f7f7;
+    background-image: url('https://img.freepik.com/free-photo/yellow-frame-colorful-background_23-2148226778.jpg?w=1060&t=st=1684991766~exp=1684992366~hmac=6583f488179ee700872ac674adefaed39d634b4853fcdaae45e0ad655c875c15');
+    padding: 2rem;
+    border-radius: 60px;
+    margin-left: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  #socialmedia{
+    margin-right: 50px;
+    display: flex;
+    justify-content:right;
+    align-items:end;
+    }
+    #socialmedia a{
+      height:80px;
+      width:80px;
+      background-color:whitesmoke;
+      border-radius: 50px;
+      margin: 10px;
+      text-align:center;
+      line-height: 100px;
+      box-shadow: 1px 4px 2px 2px rgb(115, 103, 175);
+    }
+    a i{
+      transition: all 0.3s linear;
+    }
+    #socialmedia a:hover{
+      transform: scale(1.3);
+    }
+    .fa-instagram{
+      color:#e84393;
+    }
+                                  
+
+
+
+
+  .profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 80%;
+    padding: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .description {
+    margin-top: 1rem;
+  }
+  
+  .description p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color:#ffffff;
+    font-size: larger;
+    font-weight: 900;
+    
+  }
+  
+  .description p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .description p:last-of-type {
+    font-style: italic;
+    color: #000000;
+  }
+  
+  
+
+
+/* skills and expets */
+
+#skills {
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-top: 2rem;
+    padding: 10px;
+    background-image: url('https://img.freepik.com/free-photo/still-life-business-roles-with-various-mechanism-pieces_23-2149352653.jpg?w=1060&t=st=1684995431~exp=1684996031~hmac=ede7d31f7a42c503bbd1ceb2d465112a68cce0f650e80c2a3742a33da26815bc');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+  
+  .skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skill-list li {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin: 0.5rem;
+  }
+  
+  
+
+
+/* project */
+
+#projects {
+  border-radius: 50px;
+  margin-left: 10px;
+    margin-top: 2rem;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+  }
+  
+  .project-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .project-heading h2 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .grid-container {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-item {
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right:20px ;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .project-item .project-image {
+   
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .project-item h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-item p {
+    color: #333;
+  }
+  
+  .project-item .project-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-item .project-link:hover {
+    background-color: #0056b3;
+  }
+  
+  
+
+
+
+
+
+/* education*/
+#education {
+    margin-left: 10px;
+    border-radius: 50px;
+    margin-top: 2rem;
+    padding: 10px;
+    padding-left: 20px;
+    background-image: url('https://img.freepik.com/premium-vector/abstract-wavy-background-with-simple-style-vector-illustration_518299-1347.jpg?w=996');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .education-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .education-entry h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .degree {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .education-duration {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  .education-description {
+    margin-bottom: 0.5rem;
+  }
+  
+  
+
+
+
+
+
+/* testimonials*/
+#testimonials {
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-top: 2rem;
+    text-align: center;
+    background-image: url('https://img.freepik.com/free-vector/wavy-background-with-copy-space_52683-65230.jpg?w=1060&t=st=1684985522~exp=1684986122~hmac=a7e815960509d1ca6ee4e42d0de469c1fe48677f443997960ba1ea2a32f6f378');
+background-repeat:no-repeat;
+background-size: cover;
+background-position: center;
+
+
+  }
+  
+  .testimonial {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 400px;
+  }
+  
+  .testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial blockquote {
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial cite {
+    font-weight: bold;
+  }
+  
+  
+
+
+
+
+
+/* contact */
+
+.con{
+    border-radius: 50px;
+    margin-left: 10px;
+    border-bottom:15px solid #f5f5f5;
+    background-image: url('https://img.freepik.com/free-vector/business-presentation-banner-with-blue-geometric-shape_1017-32330.jpg?w=1060&t=st=1684989771~exp=1684990371~hmac=dac0b2aff5c00c974fb04b085be98d390639e3722a905c0f9226d0853a49b1dc');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+#contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+
+  }
+  #contact h2{
+    text-align: center;
+  }
+
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+
+
+
+
+
+
+footer{
+    border-radius: 30px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.footer-content {
+    
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .footer-content p {
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    
+  }
+  
+  .footer-content ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-content ul li a {
+    color: #ffffff;
+    text-decoration: none;
+   padding-left: 60px;
+  }
+  
+  .footer-content ul li a:hover {
+    text-decoration: underline;
+    color: aqua;
+  }
+  
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
